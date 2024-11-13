@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escaneo QR y Localización</title>
+    <script src="https://cdn.jsdelivr.net/npm/jsqr/dist/jsQR.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Escaneo de QR y Localización</h1>
+
+    <!-- Contenedor para la cámara -->
+    <video id="video" width="100%" height="auto" autoplay></video>
+
+    <div>
+        <p><strong>Código QR Escaneado:</strong> <span id="qrResult">Nada aún</span></p>
+        <p><strong>Ubicación:</strong> <span id="location">Esperando ubicación...</span></p>
+    </div>
+
+    <button onclick="getLocation()">Obtener Ubicación</button>
+
+    <script src="app.js"></script>
+</body>
+</html>
+
